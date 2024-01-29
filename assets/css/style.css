@@ -7,8 +7,13 @@
   user-select: none;
 }
 
+:root {
+  --nav-bg-color: #f6f6f6;
+  --footer-bg-color: linear-gradient(90deg, #61d8e8 0.83%, #4dadfe 100%);
+}
+
 body {
-  background: #f6f6f6;
+  background: var(--nav-bg-color);
 }
 
 .section-background {
@@ -79,4 +84,27 @@ body {
 .navbar ul {
   flex: 1;
   text-align: right;
+}
+
+footer {
+  display: flex;
+  width: auto;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--footer-bg-color);
+  padding: 0 10%;
+}
+footer .left {
+  color: #f6f6f6;
+  font-size: 17.925px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.093px;
+}
+footer .right {
+  display: flex;
+}
+.right div {
+  margin: 0 20%;
 }
