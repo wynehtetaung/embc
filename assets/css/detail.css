@@ -1,0 +1,125 @@
+h3 {
+  font-size: 18px;
+  margin-left: 80px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+.btn-gp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gp {
+  margin: 20px 0;
+}
+
+.btn-gp button {
+  margin: 0 20px;
+  padding: 15px 20px;
+  background: #89ecf3;
+  backface-visibility: 20%;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-gp button:hover {
+  background: #0bd4e3;
+}
+
+hr {
+  width: 500px;
+
+  margin: 0 auto;
+}
+
+.format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.format button {
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 20px 10px;
+  background: #0bd4e3;
+  border: 0;
+  outline: 0;
+}
+
+.format input {
+  width: 100px;
+  padding: 10px 5px;
+  margin: 20px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background: #efcdcd;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 10px 5px;
+  margin: 20px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background: #efcdcd;
+  color: #000;
+} */
+
+.final {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.final .add {
+  width: 200px;
+  padding: 10px 5px;
+  margin: 60px 10px;
+  border: 2px solid#076cbe;
+  border-radius: 5px;
+  color: #076cbe;
+  transition: 0.2s;
+}
+.final .add:hover {
+  background: #076cbe;
+  color: #fafafa;
+  transition: 0.2s;
+}
+
+.final .calculate {
+  width: 200px;
+  padding: 10px 5px;
+  margin: 60px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background: #076cbe;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.final .calculate:hover {
+  border: 2px solid#076cbe;
+  background: #ffffff;
+  transition: 0.2s;
+  color: #000;
+}

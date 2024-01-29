@@ -11,6 +11,7 @@
     <title>about</title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/detail.css" />
   </head>
   <body>
     <div class="navbar">
@@ -25,6 +26,34 @@
       <img class="dark-light" src="/assets/images/png/dark_mode.png" alt="" />
 
       <button class="localization">Myan</button>
+    </div>
+
+    <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
+    <h1>Light</h1>
+    <div class="btn-gp">
+      <button>Normal</button>
+      <button>LED light bulb</button>
+      <button>LED light stick</button>
+    </div>
+    <hr />
+    <div class="format">
+      <button>Normal</button>
+      <input type="number" placeholder="quantity" />
+      <input type="number" placeholder="hour" />
+      <input type="number" value="20" />watts
+    </div>
+    <div class="format">
+      <button>LED light bulb</button>
+      <input type="number" placeholder="quantity" />
+      <input type="number" placeholder="hour" />
+      <input type="number" value="30" />watts
+    </div>
+
+    <!-- <input type="number" class="duration" placeholder="Duration" /> -->
+
+    <div class="final">
+      <button class="add" type="">Save to add</button>
+      <button class="calculate" type="submit">Calculate</button>
     </div>
   </body>
 </html>

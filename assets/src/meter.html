@@ -11,6 +11,7 @@
     <title>about</title>
 
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/meter.css" />
   </head>
   <body>
     <div class="navbar">
@@ -25,6 +26,65 @@
       <img class="dark-light" src="/assets/images/png/dark_mode.png" alt="" />
 
       <button class="localization">Myan</button>
+    </div>
+    <h1>Meter Unit Calculation</h1>
+    <div class="box">
+      <input type="number" placeholder="Enter your meter" />
+      <select>
+        <option value="1">Household</option>
+        <option value="2">Bussiness</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </div>
+
+    <div class="table">
+      <table>
+        <tr>
+          <th>Limit Range</th>
+          <th>Unit per Kyat</th>
+          <th>Cost in mmk</th>
+        </tr>
+        <tr>
+          <td>1-30</td>
+          <td>35</td>
+          <td>1050</td>
+        </tr>
+        <tr>
+          <td>31-50</td>
+          <td>50</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>51-75</td>
+          <td>70</td>
+          <td>1750</td>
+        </tr>
+        <tr>
+          <td>76-100</td>
+          <td>90</td>
+          <td>2250</td>
+        </tr>
+        <tr>
+          <td>101-150</td>
+          <td>110</td>
+          <td>5500</td>
+        </tr>
+        <tr>
+          <td>151-200</td>
+          <td>120</td>
+          <td>6000</td>
+        </tr>
+        <tr>
+          <td>200 and above</td>
+          <td>125</td>
+          <td>****</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td>
+          <td>255 units</td>
+          <td>**** mmk</td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>

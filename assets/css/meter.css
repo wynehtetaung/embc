@@ -2,10 +2,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -10px;
 }
 
 .box {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -61,7 +62,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 30px 0;
   border-collapse: collapse;
   border-radius: 10px;
 }
@@ -75,13 +76,14 @@ tr {
   text-align: center;
 }
 
-.total {
-  font-size: 25px;
-  font-weight: 600;
-  border: none;
+th {
+  background: #048efe;
+  color: #fff;
 }
 
-.total-text {
-  text-align: end;
-  border: none;
+.total {
+  font-size: 20px;
+  font-weight: 600;
+
+  background: #04eefe;
 }
