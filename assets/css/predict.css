@@ -1,4 +1,7 @@
-.perdict-title {
+:root {
+  --list-bg-color: rgba(11, 212, 227, 0.2);
+}
+.predict-title {
   position: absolute;
   color: #424242;
   font-size: 36px;
@@ -9,4 +12,69 @@
   text-transform: capitalize;
   top: 20%;
   left: 35%;
+}
+section .list {
+  list-style: none;
+  position: absolute;
+  top: 32%;
+  left: 37.5%;
+}
+section .list li {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  min-width: 452px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: var(--list-bg-color);
+  margin-bottom: 20px;
+}
+li .icon {
+  padding-right: 30px;
+  width: 16px;
+  height: 22.971px;
+  flex-shrink: 0;
+  color: #333;
+}
+li .item {
+  color: #484848;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: capitalize;
+  margin-right: 25px;
+}
+.calculate-button {
+  position: absolute;
+  left: 14%;
+  margin-top: 35px;
+  display: inline-flex;
+  padding: 14px 74px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 320px;
+  height: 52px;
+  color: #333;
+  border-radius: 7px;
+  background: linear-gradient(91deg, #04eefe -1.41%, #4dadfe 99.6%);
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+.mark-container {
+  display: flex;
+}
+.mark {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+.mark-text {
+  margin-right: 10px;
+}
+.mark-icon {
+  cursor: pointer;
 }

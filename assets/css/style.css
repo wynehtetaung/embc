@@ -6,10 +6,10 @@
   font-family: "Poppins", sans-serif;
   user-select: none;
 }
-
 :root {
   --nav-bg-color: #f6f6f6;
   --footer-bg-color: linear-gradient(90deg, #61d8e8 0.83%, #4dadfe 100%);
+  --mark-bg-color: rgba(75, 176, 255, 0.2);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 .section-background {
   background-image: url("/assets/images/png/background.png");
-  height: 900px;
+  min-height: 950px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,6 +32,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #f6f6f6;
+  /* position: fixed;
+  z-index: 1; */
 }
 
 .logo img {
@@ -107,4 +109,11 @@ footer .right {
 }
 .right div {
   margin: 0 20%;
+}
+.mark-button {
+  width: auto;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--mark-bg-color);
 }
