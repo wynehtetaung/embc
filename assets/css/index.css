@@ -1,0 +1,51 @@
+.content {
+  margin-top: 8%;
+  max-width: 600px;
+  margin-left: 100px;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content span {
+  color: #04eefe;
+  font-size: 57px;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: #000;
+  line-height: 25px;
+}
+
+.content .calculate {
+  width: 150px;
+  height: 50px;
+  background: #04eefe;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+}
+
+.content .calculate:hover {
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.5s;
+}
+
+.content .calculate a {
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  color: #f6f6f6;
+}
+
+.obj {
+  position: absolute;
+  width: 450px;
+  bottom: 0;
+  top: 17%;
+  right: 10%;
+}
