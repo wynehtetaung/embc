@@ -12,6 +12,9 @@ tr {
   height: 48px;
   text-align: center;
 }
+th {
+  background: #4bd6eb;
+}
 
 .table {
   display: flex;
