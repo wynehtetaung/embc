@@ -1,0 +1,12 @@
+.perdict-title {
+  position: absolute;
+  color: #424242;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  top: 20%;
+  left: 35%;
+}
