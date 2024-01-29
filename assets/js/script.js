@@ -1,0 +1,1 @@
+const embc = "hello embc";
