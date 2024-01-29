@@ -99,6 +99,11 @@ input::-webkit-inner-spin-button {
   color: #076cbe;
   transition: 0.2s;
 }
+
+.final .add img {
+  width: 22px;
+  padding-right: 9px;
+}
 .final .add:hover {
   background: #076cbe;
   color: #fafafa;
