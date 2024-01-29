@@ -6,3 +6,6 @@
 :root {
   --bg-color: red;
 }
+body {
+  background: var(--bg-color);
+}
