@@ -3,6 +3,21 @@ h1 {
   align-items: center;
   justify-content: center;
   padding-top: 90px;
+  color: var(--h1);
+}
+
+:root {
+  --input: #e0dcdc;
+  --select-color: #000;
+  --unit: #000;
+  --h1: #000;
+}
+
+.dark-theme {
+  --input: #dcdcdc;
+  --select-color: #fff;
+  --unit: #fff;
+  --h1: #fff;
 }
 
 .box {
@@ -17,7 +32,7 @@ h1 {
   height: 50px;
   border: none;
   outline: none;
-  background: #e0dcdc;
+  background: var(--input);
   border-radius: 8px;
   text-decoration-color: #fff;
   padding: 13px;
@@ -34,6 +49,7 @@ h1 {
   margin: 0 20px;
   border-radius: 9px;
   background: #aae4f1;
+
   border: 0;
   outline: 0;
   padding: 10px;
@@ -77,11 +93,12 @@ tr {
   width: 180px;
   height: 43px;
   text-align: center;
+  color: var(--unit);
 }
 
 th {
   background: #aae4f1;
-  color: #4b4a4a;
+  color: #000000;
 }
 
 .total {

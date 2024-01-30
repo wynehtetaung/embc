@@ -8,8 +8,16 @@
 }
 :root {
   --nav-bg-color: #f6f6f6;
+  --nav-ul: #000;
   --footer-bg-color: linear-gradient(90deg, #61d8e8 0.83%, #4dadfe 100%);
   --mark-bg-color: rgba(75, 176, 255, 0.2);
+  --url: url("/assets/images/png/background.png");
+}
+
+.dark-theme {
+  --nav-bg-color: #3d4151;
+  --nav-ul: #f6f6f6;
+  --url: url("/assets/images/png/background2.png");
 }
 
 body {
@@ -17,7 +25,7 @@ body {
 }
 
 .section-background {
-  background-image: url("/assets/images/png/background.png");
+  background-image: var(--url);
   min-height: 1200px;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f6f6f6;
+  background: var(--nav-bg-color);
   z-index: 1;
 }
 
@@ -49,7 +57,7 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--nav-ul);
   font-weight: 600;
 }
 

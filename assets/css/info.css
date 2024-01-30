@@ -4,6 +4,14 @@ table {
   border-radius: 10px;
 }
 
+:root {
+  --table-text: #000;
+  --p: #000;
+}
+.dark-theme {
+  --table-text: #fff;
+  --p: #fff;
+}
 td,
 th,
 tr {
@@ -11,9 +19,11 @@ tr {
   width: 190px;
   height: 48px;
   text-align: center;
+  color: var(--table-text);
 }
 th {
   background: #4bd6eb;
+  color: #000;
 }
 
 .table {
@@ -30,6 +40,7 @@ p {
   font-size: 20px;
   margin-top: 100px;
   margin-bottom: -28px;
+  color: var(--p);
 }
 
 .items {

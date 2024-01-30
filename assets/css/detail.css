@@ -8,12 +8,27 @@ a {
   color: #000;
 }
 
+:root {
+  --h1: #000;
+  --watt: #000;
+  --add: #076cbe;
+  --calculate-hover: #000;
+}
+
+.dark-theme {
+  --h1: #fff;
+  --watt: #fff;
+  --add: #fff;
+  --calculate-hover: #fff;
+}
+
 h1,
 .btn-gp {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  color: var(--h1);
 }
 
 .btn-gp {
@@ -99,7 +114,8 @@ input::-webkit-inner-spin-button {
   margin: 60px 10px;
   border: 2px solid#076cbe;
   border-radius: 5px;
-  color: #076cbe;
+  color: var(--add);
+  background: transparent;
   transition: 0.2s;
   box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
 }
@@ -123,13 +139,19 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   background: #076cbe;
   color: #ffffff;
+
   transition: 0.2s;
   box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .final .calculate:hover {
   border: 2px solid#076cbe;
-  background: #ffffff;
+
+  background: transparent;
   transition: 0.2s;
-  color: #000;
+  color: var(--calculate-hover);
+}
+
+.watt {
+  color: var(--watt);
 }

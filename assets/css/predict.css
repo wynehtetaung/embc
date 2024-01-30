@@ -1,22 +1,35 @@
 :root {
   --list-bg-color: rgba(11, 212, 227, 0.2);
+  --title: #424242;
+  --icon: #333;
+  --icon-text: #484848;
+  --calcluate-color: #333;
 }
+
+.dark-theme {
+  --list-bg-color: #609797;
+  --title: #f6f6f6;
+  --icon: #f6f6f6;
+  --icon-text: #f6f6f6;
+  --calcluate-color: #f6f6f6;
+}
+
 .predict-title {
   position: absolute;
-  color: #424242;
+  color: var(--title);
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  top: 20%;
+  top: 15%;
   left: 30%;
 }
 section .list {
   list-style: none;
   position: absolute;
-  top: 32%;
+  top: 25%;
   left: 15%;
 }
 section .list li {
@@ -39,10 +52,10 @@ li .icon {
   width: 16px;
   height: 22.971px;
   flex-shrink: 0;
-  color: #333;
+  color: var(--icon);
 }
 li .item {
-  color: #484848;
+  color: var(--icon-text);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -62,7 +75,7 @@ li .item {
   gap: 10px;
   width: 320px;
   height: 52px;
-  color: #333;
+  color: var(--calcluate-color);
   border-radius: 7px;
   background: linear-gradient(91deg, #04eefe -1.41%, #4dadfe 99.6%);
   box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
