@@ -18,6 +18,7 @@ th {
 
 .table {
   display: flex;
+
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -27,7 +28,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 100px;
   margin-bottom: -28px;
 }
 
