@@ -12,8 +12,18 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/detail.css" />
+
+    <style>
+      .section-background {
+        min-height: 700px;
+      }
+
+      .navbar {
+        position: fixed;
+      }
+    </style>
   </head>
-  <body>
+  <body class="section-background">
     <div class="navbar">
       <div class="logo"><img src="/assets/images/png/logo.png" /></div>
       <ul>
@@ -49,10 +59,20 @@
         <input type="number" placeholder="hour" />
         <input type="number" value="30" />watts
       </div>
+      <div class="format">
+        <button>LED light bulb</button>
+        <input type="number" placeholder="quantity" />
+        <input type="number" placeholder="hour" />
+        <input type="number" value="30" />watts
+      </div>
 
       <!-- <input type="number" class="duration" placeholder="Duration" /> -->
 
       <div class="final">
+        <a href="/assets/src/predict.html"
+          ><button class="calculate">&lt;&lt; Back</button></a
+        >
+
         <button class="add" type="">
           <img src="/assets/images/png/plus.png" alt="" />Save to add
         </button>
