@@ -11,13 +11,13 @@
   letter-spacing: 0.72px;
   text-transform: capitalize;
   top: 20%;
-  left: 35%;
+  left: 30%;
 }
 section .list {
   list-style: none;
   position: absolute;
   top: 32%;
-  left: 23%;
+  left: 15%;
 }
 section .list li {
   display: flex;
