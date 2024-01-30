@@ -17,21 +17,25 @@ section .list {
   list-style: none;
   position: absolute;
   top: 32%;
-  left: 37.5%;
+  left: 23%;
 }
 section .list li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 5%;
-  min-width: 452px;
+  min-width: 900px;
   height: 55px;
   flex-shrink: 0;
   border-radius: 4px;
   background-color: var(--list-bg-color);
   margin-bottom: 20px;
 }
+li .list-container {
+  display: flex;
+}
 li .icon {
-  padding-right: 30px;
+  padding-right: 32px;
   width: 16px;
   height: 22.971px;
   flex-shrink: 0;
@@ -49,7 +53,7 @@ li .item {
 }
 .calculate-button {
   position: absolute;
-  left: 14%;
+  left: 33.5%;
   margin-top: 35px;
   display: inline-flex;
   padding: 14px 74px;
