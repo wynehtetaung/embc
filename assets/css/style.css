@@ -122,3 +122,10 @@ footer .right {
     0px 0px 8px rgba(100, 137, 138, 0.734),
     0px 0px 8px rgba(100, 137, 138, 0.734);
 }
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
