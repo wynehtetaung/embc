@@ -16,7 +16,7 @@ h1 {
 .dark-theme {
   --input: #dcdcdc;
   --select-color: #fff;
-  --unit: #fff;
+  --unit: #ffffff;
   --h1: #fff;
 }
 
@@ -78,7 +78,7 @@ h1 {
 }
 
 table {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   margin: 30px 0;
@@ -104,6 +104,11 @@ th {
 .total {
   font-size: 20px;
   font-weight: 600;
+  color: #000;
 
   background: #04eefe;
+}
+
+.d {
+  display: none;
 }
