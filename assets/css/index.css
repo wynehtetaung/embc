@@ -7,11 +7,15 @@
 :root {
   --content-btn: #f6f6f6;
   --content-h1: #000;
+  --visit-background: #23252a;
+  --visit-color: #ffffff;
 }
 
 .dark-theme {
   --content-btn: #3d4151;
   --content-h1: #f6f6f6;
+  --visit-background: rgb(210, 210, 210);
+  --visit-color: #000000;
 }
 
 .content h1 {
@@ -67,7 +71,8 @@
   font-size: 18px;
   margin: -20px auto;
   border: 0;
-
+  background: var(--visit-background);
+  color: var(--visit-color);
   display: flex;
   align-items: center;
   justify-content: center;
