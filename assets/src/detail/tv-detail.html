@@ -47,10 +47,19 @@
       </div>
       <hr />
       <div class="format">
-        <button class="get-btn">Normal</button>
+        <button class="get-btn">below 32 inches</button>
         <input type="number" placeholder="Enter quantity" />
         <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="20 Watts" id="default" readonly />
+        <input type="number" placeholder="60 Watts" id="default" readonly />
+        <input type="number" placeholder="custom Watt" id="custom" />
+        <input type="checkbox" onclick="clicked()" id="checking" />
+        <p class="custom-text">Custom</p>
+      </div>
+      <div class="format">
+        <button class="get-btn">32 inches and above</button>
+        <input type="number" placeholder="Enter quantity" />
+        <input type="number" placeholder="Enter hour" />
+        <input type="number" placeholder="200 Watts" id="default" readonly />
         <input type="number" placeholder="custom Watt" id="custom" />
         <input type="checkbox" onclick="clicked()" id="checking" />
         <p class="custom-text">Custom</p>
