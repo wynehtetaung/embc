@@ -40,7 +40,7 @@
     </div>
     <section class="section-background">
       <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
-      <h1>Kitchen</h1>
+      <h1 class="item-name">Kitchen</h1>
       <div class="btn-gp">
         <button>Mini pot</button>
         <button>Cooking pot</button>
@@ -51,51 +51,25 @@
       <hr />
       <div class="format">
         <button class="get-btn">Mini pot</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="300 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
+        <input class="quantity" type="number" placeholder="Enter quantity" />
+        <input class="hour" type="number" placeholder="Enter hour" />
+        <input
+          class="default-value"
+          type="number"
+          value="300"
+          id="default"
+          readonly
+        /><span class="default-watt">Watts</span>
+        <input
+          class="custom-value"
+          type="number"
+          placeholder="custom Watt"
+          id="custom"
+        /><span class="custom-watt" style="display: none">Watts</span>
         <input type="checkbox" onclick="clicked()" id="checking" />
         <p class="custom-text">Custom</p>
       </div>
 
-      <div class="format">
-        <button class="get-btn">Cooking pot</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="1000 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Kittle</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="1500 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Rice Cooker</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="700 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-
-      <div class="format">
-        <button class="get-btn">Electric Rnage</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="2000 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
       <div class="final">
         <a href="/assets/src/predict.html"
           ><button class="calculate">&lt;&lt; Back</button></a

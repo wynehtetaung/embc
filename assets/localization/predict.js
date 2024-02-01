@@ -13,6 +13,7 @@ const predictMyanmar = [
   "အထွေထွေအသုံးပြုမှု",
   "ရေအေးစက်",
   "တွက်ချက်ပါ",
+  "ပြန်လည်သတ်မှတ်ပါ",
 ];
 const predictEnglish = [];
 
