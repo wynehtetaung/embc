@@ -49,28 +49,12 @@
       <hr />
       <div class="format">
         <button>Normal</button>
-        <input type="number" placeholder="quantity" />
-        <input type="number" placeholder="hour" />
-        <input type="number" value="20" />
-        <p class="watt">watts</p>
-      </div>
-      <div class="format">
-        <button>LED light bulb</button>
-        <input type="number" placeholder="quantity" />
-        <input type="number" placeholder="hour" />
-        <input type="number" value="30" />
-        <p class="watt">watts</p>
-      </div>
-      <div class="format">
-        <button>LED light bulb</button>
-        <input type="number" placeholder="quantity" />
-        <input type="number" placeholder="hour" />
-        <input type="number" value="30" />
-        <p class="watt">watts</p>
-      </div>
-
-      <div class="duration">
-        <input type="number" class="duration" placeholder="Duration by days" />
+        <input type="number" placeholder="Enter quantity" />
+        <input type="number" placeholder="Enter hour" />
+        <input type="number" placeholder="20 Watts" id="default" readonly />
+        <input type="number" placeholder="custom Watt" id="custom" />
+        <input type="checkbox" onclick="clicked()" id="checking" />
+        <p>Custom</p>
       </div>
 
       <div class="final">
@@ -81,7 +65,6 @@
         <button class="add" type="">
           <img src="/assets/images/png/plus.png" alt="" />Save to add
         </button>
-        <button class="calculate" type="submit">Calculate</button>
       </div>
     </section>
     <footer>
@@ -94,5 +77,6 @@
     </footer>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/localization/nav.js"></script>
+    <script src="/assets/js/detail.js"></script>
   </body>
 </html>

@@ -75,15 +75,15 @@ hr {
   width: 150px;
   border-radius: 5px;
   padding: 10px 0;
-  margin: 20px 10px;
+  margin: 20px 19px;
   background: #0bd4e3;
   border: 0;
   outline: 0;
 }
 
-.format input {
-  width: 100px;
-  padding: 10px 5px;
+.format input[type="number"] {
+  width: 120px;
+  padding: 10px 10px;
   margin: 20px 10px;
   border: 0;
   outline: 0;
@@ -96,18 +96,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.duration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 10px;
-  margin: 5px 10px;
-  border: 0;
-  outline: 0;
-  border-radius: 5px;
+#custom {
+  display: none;
 }
-.duration input {
-  background: #bebdbd;
+
+#default::placeholder {
+  color: #000;
+}
+
+input#checking {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
 }
 
 .final {
@@ -158,8 +159,4 @@ input::-webkit-inner-spin-button {
   background: transparent;
   transition: 0.2s;
   color: var(--calculate-hover);
-}
-
-.watt {
-  color: var(--watt);
 }
