@@ -21,6 +21,7 @@ a {
   --watt: #000;
   --add: #076cbe;
   --calculate-hover: #000;
+  --custom: #000;
 }
 
 .dark-theme {
@@ -28,6 +29,7 @@ a {
   --watt: #fff;
   --add: #fff;
   --calculate-hover: #fff;
+  --custom: #fff;
 }
 
 h1,
@@ -148,7 +150,6 @@ input#checking {
   border-radius: 5px;
   background: #076cbe;
   color: #ffffff;
-
   transition: 0.2s;
   box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
 }
@@ -159,4 +160,8 @@ input#checking {
   background: transparent;
   transition: 0.2s;
   color: var(--calculate-hover);
+}
+
+.custom-text {
+  color: var(--custom);
 }
