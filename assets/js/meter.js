@@ -65,8 +65,8 @@ function HomeUnit() {
     total1 = unit.value * 35;
     cost1.innerHTML = total1;
     current = 0;
-    totalCost.innerHTML = total1 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total1;
+    totalUnit.innerHTML = unit.value;
 
     displayHide();
   }
@@ -91,8 +91,8 @@ function HomeUnit() {
     cost2.innerHTML = current * 50;
     total2 = total1 + current * 50;
     current = 0;
-    totalCost.innerHTML = total2 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total2;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit3 = document.getElementById("limit3");
@@ -115,8 +115,8 @@ function HomeUnit() {
     cost3.innerHTML = current * 70;
     total3 = total2 + current * 70;
     current = 0;
-    totalCost.innerHTML = total3 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total3;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit4 = document.getElementById("limit4");
@@ -140,8 +140,8 @@ function HomeUnit() {
     cost4.innerHTML = current * 90;
     total4 = total3 + current * 90;
     current = 0;
-    totalCost.innerHTML = total4 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total4;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit5 = document.getElementById("limit5");
@@ -166,8 +166,8 @@ function HomeUnit() {
     cost5.innerHTML = current * 110;
     total5 = total4 + current * 110;
     current = 0;
-    totalCost.innerHTML = total5 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total5;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit6 = document.getElementById("limit6");
@@ -193,8 +193,8 @@ function HomeUnit() {
     cost6.innerHTML = current * 120;
     total6 = total5 + current * 120;
     current = 0;
-    totalCost.innerHTML = total6 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total6;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit7 = document.getElementById("limit7");
@@ -207,8 +207,8 @@ function HomeUnit() {
     total7 = total6 + current * 125;
     cost7.innerHTML = current * 125;
     current = 0;
-    totalCost.innerHTML = total7 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total7;
+    totalUnit.innerHTML = unit.value;
   }
 }
 
@@ -241,8 +241,8 @@ function BusinessUnit() {
     total1 = unit.value * 125;
     cost1.innerHTML = total1;
     current = 0;
-    totalCost.innerHTML = total1 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total1;
+    totalUnit.innerHTML = unit.value;
 
     displayHide();
   }
@@ -267,8 +267,8 @@ function BusinessUnit() {
     cost2.innerHTML = current * 135;
     total2 = total1 + current * 135;
     current = 0;
-    totalCost.innerHTML = total2 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total2;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit3 = document.getElementById("limit3");
@@ -291,8 +291,8 @@ function BusinessUnit() {
     cost3.innerHTML = current * 145;
     total3 = total2 + current * 145;
     current = 0;
-    totalCost.innerHTML = total3 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total3;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit4 = document.getElementById("limit4");
@@ -316,8 +316,8 @@ function BusinessUnit() {
     cost4.innerHTML = current * 155;
     total4 = total3 + current * 155;
     current = 0;
-    totalCost.innerHTML = total4 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total4;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit5 = document.getElementById("limit5");
@@ -342,8 +342,8 @@ function BusinessUnit() {
     cost5.innerHTML = current * 165;
     total5 = total4 + current * 165;
     current = 0;
-    totalCost.innerHTML = total5 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total5;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit6 = document.getElementById("limit6");
@@ -369,8 +369,8 @@ function BusinessUnit() {
     cost6.innerHTML = current * 175;
     total6 = total5 + current * 175;
     current = 0;
-    totalCost.innerHTML = total6 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total6;
+    totalUnit.innerHTML = unit.value;
   }
 
   let limit7 = document.getElementById("limit7");
@@ -383,7 +383,7 @@ function BusinessUnit() {
     total7 = total6 + current * 180;
     cost7.innerHTML = current * 180;
     current = 0;
-    totalCost.innerHTML = total7 + " mmk";
-    totalUnit.innerHTML = unit.value + " units";
+    totalCost.innerHTML = total7;
+    totalUnit.innerHTML = unit.value;
   }
 }

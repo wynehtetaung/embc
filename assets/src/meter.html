@@ -41,22 +41,24 @@
       <button class="localization eng hide nav-lang">Eng</button>
     </div>
     <section class="section-background">
-      <h1>Meter Unit Calculation</h1>
+      <h1 class="meter-lang">Meter Unit Calculation</h1>
       <div class="box">
         <input type="number" placeholder="Enter your meter" id="unit" />
         <select id="meter-type">
-          <option value="1">Household</option>
-          <option value="2">Bussiness</option>
+          <option value="1" class="meter-lang">Home</option>
+          <option value="2" class="meter-lang">Bussiness</option>
         </select>
-        <button type="submit" id="calculate">Calculate</button>
+        <button type="submit" id="calculate" class="meter-lang">
+          Calculate
+        </button>
       </div>
 
       <div class="table">
         <table>
           <tr>
-            <th>Limit Range</th>
-            <th>Unit per Kyat</th>
-            <th>Cost in mmk</th>
+            <th class="meter-lang">Limit Range</th>
+            <th class="meter-lang">Unit per Kyat</th>
+            <th class="meter-lang">Cost in mmk</th>
           </tr>
           <tr>
             <td id="limit1">1-30</td>
@@ -94,9 +96,14 @@
             <td id="cost7">****</td>
           </tr>
           <tr class="total">
-            <td>Total</td>
-            <td id="total-unit">units</td>
-            <td id="total-cost">mmk</td>
+            <td class="meter-lang">Total</td>
+            <td>
+              <span id="total-unit"></span>
+              <span class="meter-lang">units</span>
+            </td>
+            <td>
+              <span id="total-cost"></span> <span class="meter-lang">mmk</span>
+            </td>
           </tr>
         </table>
       </div>
@@ -111,6 +118,7 @@
     </footer>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/localization/nav.js"></script>
+    <script src="/assets/localization/meter.js"></script>
     <script src="/assets/js/meter.js"></script>
   </body>
 </html>
