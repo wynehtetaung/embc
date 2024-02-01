@@ -27,10 +27,12 @@ localStorage.setItem("lang", getLang);
 if (getLang == "myanmar") {
   for (let i = 0; i < textLang.length; i++) {
     textLang[i].innerHTML = myanmarText[i];
+    changeMyanmarBtn();
   }
 } else {
   for (let i = 0; i < textLang.length; i++) {
     textLang[i].innerHTML = englishText[i];
+    changeEnglishBtn();
   }
 }
 
