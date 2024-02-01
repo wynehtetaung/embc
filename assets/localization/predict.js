@@ -1,0 +1,2 @@
+const predictMyanmar = [];
+const predictEnglish = [];
