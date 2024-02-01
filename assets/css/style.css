@@ -125,10 +125,10 @@ footer .right {
   background: var(--mark-bg-color);
 }
 .mark-button:hover {
-  box-shadow: 0px 0px 8px rgba(100, 137, 138, 0.734),
-    0px 0px 8px rgba(100, 137, 138, 0.734),
-    0px 0px 8px rgba(100, 137, 138, 0.734),
-    0px 0px 8px rgba(100, 137, 138, 0.734);
+  box-shadow: 0px 0px 8px rgba(250, 121, 121, 0.734),
+    0px 0px 8px rgba(250, 121, 121, 0.734),
+    0px 0px 8px rgba(250, 121, 121, 0.734),
+    0px 0px 8px rgba(250, 121, 121, 0.734);
 }
 .show {
   display: block;

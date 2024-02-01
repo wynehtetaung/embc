@@ -63,6 +63,11 @@ li .item {
   letter-spacing: 0.32px;
   text-transform: capitalize;
   margin-right: 25px;
+  cursor: pointer;
+}
+li .item:hover {
+  font-size: 18px;
+  color: #333;
 }
 .calculate-button {
   position: absolute;

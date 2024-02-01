@@ -13,7 +13,7 @@ const meterMyanmar = [
 const meterEnglish = [
   "Meter Unit Calculation",
   "Home",
-  "Bussiness",
+  "Business",
   "Calculate",
   "Limit Range",
   "Unit per Kyat",
