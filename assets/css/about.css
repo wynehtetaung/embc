@@ -21,3 +21,10 @@ b {
   margin: 6px;
   color: var(--text);
 }
+
+.content h2 {
+  margin: 0px 0px 15px 0px;
+}
+.content h3 {
+  margin: 25px 0px;
+}
