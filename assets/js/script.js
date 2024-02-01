@@ -1,5 +1,6 @@
 const myanmar = document.querySelector(".myan");
 const english = document.querySelector(".eng");
+const viewCount = document.querySelector(".visit-count");
 function changeMyanmarBtn() {
   myanmar.classList.remove("show");
   myanmar.classList.add("hide");
@@ -46,3 +47,18 @@ icon.onclick = function () {
     obj.src = "/assets/images/png/OBJECTS.png";
   }
 };
+
+function viewCounter(type) {
+  fetch(`https://embc-view-count.glitch.me/api?type=${type}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      viewCount.textContent = data.pageView;
+    });
+}
+if (sessionStorage.getItem("visits") === null) {
+  viewCounter("new-count");
+  sessionStorage.setItem("visits", "view-count");
+} else {
+  viewCounter("view-count");
+}

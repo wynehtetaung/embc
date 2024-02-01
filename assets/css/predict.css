@@ -35,14 +35,29 @@ section .list {
 section .list li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 5%;
-  min-width: 900px;
+  min-width: 200px;
   height: 55px;
   flex-shrink: 0;
   border-radius: 4px;
   background-color: var(--list-bg-color);
   margin-bottom: 20px;
+}
+.list-main-container {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+.add-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 55%;
+}
+li {
+  margin: 10px;
 }
 li .list-container {
   display: flex;
@@ -71,7 +86,8 @@ li .item:hover {
 }
 .calculate-button {
   position: absolute;
-  left: 33.5%;
+  top: 115%;
+  left: 28%;
   margin: 40px 0;
   display: inline-flex;
   padding: 14px 74px;
@@ -84,15 +100,41 @@ li .item:hover {
   border-radius: 7px;
   background: linear-gradient(91deg, #04eefe -1.41%, #4dadfe 99.6%);
   box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.reset-button {
+  position: absolute;
+  top: 115%;
+  left: 100%;
+  margin: 40px 0;
+  display: inline-flex;
+  padding: 14px 74px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 320px;
+  height: 52px;
+  color: var(--calcluate-color);
+  border-radius: 7px;
+  background: linear-gradient(91deg, #04eefe -1.41%, #4dadfe 99.6%);
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.add-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 .mark-container {
+  /* width: 500px; */
   display: flex;
+  /* flex-wrap: wrap; */
 }
 .mark {
   display: flex;
   align-items: center;
   padding: 5px;
   margin-left: 10px;
+  margin: 15px;
 }
 .mark-text {
   margin-right: 10px;
@@ -120,4 +162,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.d-none {
+  display: none;
 }

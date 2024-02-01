@@ -19,7 +19,7 @@
       }
     </style>
   </head>
-  <body class="section-background">
+  <body class="section-background" data-light="1">
     <div class="navbar">
       <div class="logo"><img src="/assets/images/png/logo.png" /></div>
       <ul>
@@ -40,37 +40,30 @@
     </div>
     <section class="section-background">
       <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
-      <h1>Light</h1>
+      <h1 class="item-name">Light</h1>
       <div class="btn-gp">
-        <button>Normal</button>
+        <button>Light Normal</button>
         <button>LED light bulb</button>
         <button>LED light stick</button>
       </div>
       <hr />
       <div class="format">
-        <button class="get-btn">Normal</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="10 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">LED light bulb</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="15 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">LED long light</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="20 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
+        <button class="get-btn">Light Normal</button>
+        <input class="quantity" type="number" placeholder="Enter quantity" />
+        <input class="hour" type="number" placeholder="Enter hour" />
+        <input
+          class="default-value"
+          type="number"
+          value="10"
+          id="default"
+          readonly
+        /><span class="default-watt">Watts</span>
+        <input
+          class="custom-value"
+          type="number"
+          placeholder="custom Watt"
+          id="custom"
+        /><span class="custom-watt" style="display: none">Watts</span>
         <input type="checkbox" onclick="clicked()" id="checking" />
         <p class="custom-text">Custom</p>
       </div>

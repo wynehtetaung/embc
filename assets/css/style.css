@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  /* user-select: none; */
+  user-select: none;
 }
 :root {
   --nav-bg-color: #f6f6f6;
@@ -26,7 +26,7 @@ body {
 
 .section-background {
   background-image: var(--url);
-  min-height: 1200px;
+  max-height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,10 +125,9 @@ footer .right {
   background: var(--mark-bg-color);
 }
 .mark-button:hover {
-  box-shadow: 0px 0px 8px rgba(250, 121, 121, 0.734),
-    0px 0px 8px rgba(250, 121, 121, 0.734),
-    0px 0px 8px rgba(250, 121, 121, 0.734),
-    0px 0px 8px rgba(250, 121, 121, 0.734);
+  box-shadow: 0px 0px 8px rgba(55, 83, 93, 0.734),
+    0px 0px 8px rgba(55, 83, 93, 0.734), 0px 0px 8px rgba(55, 83, 93, 0.734),
+    0px 0px 8px rgba(55, 83, 93, 0.734);
 }
 .show {
   display: block;
@@ -144,4 +143,10 @@ footer .right {
 .text-wrap {
   width: 400px;
   text-wrap: wrap;
+}
+.calculate {
+  cursor: pointer;
+}
+.add {
+  cursor: pointer;
 }

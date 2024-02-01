@@ -40,7 +40,7 @@
     </div>
     <section class="section-background">
       <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
-      <h1>General Usage</h1>
+      <h1 class="item-name" >General Usage</h1>
       <div class="btn-gp">
         <button>Light Bulb</button>
         <button>Torch</button>
@@ -51,49 +51,14 @@
       <hr />
       <div class="format">
         <button class="get-btn">Light Bulb</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="10 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
+        <input class="quantity" type="number" placeholder="Enter quantity" />
+        <input class="hour" type="number" placeholder="Enter hour" />
+        <input class="default-value" type="number" value="10" id="default" readonly /><span class="default-watt">Watts</span>
+        <input class="custom-value" type="number" placeholder="custom Watt" id="custom" /><span class="custom-watt" style="display: none">Watts</span>
         <input type="checkbox" onclick="clicked()" id="checking" />
         <p class="custom-text">Custom</p>
       </div>
-      <div class="format">
-        <button class="get-btn">Torch</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="8 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-
-      <div class="format">
-        <button class="get-btn">Bluetooth</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="8 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Aripod</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="8 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Lamp</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="8 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
+      
       </div>
 
       <div class="final">

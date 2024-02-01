@@ -40,37 +40,30 @@
     </div>
     <section class="section-background">
       <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
-      <h1>Refrigerator</h1>
+      <h1 class="item-name">Refrigerator</h1>
       <div class="btn-gp">
-        <button>Small</button>
-        <button>Medium</button>
-        <button>Large</button>
+        <button>Refi Small</button>
+        <button>Refi Medium</button>
+        <button>Refi Large</button>
       </div>
       <hr />
       <div class="format">
-        <button class="get-btn">Small</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="350 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Medium</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="700 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
-        <input type="checkbox" onclick="clicked()" id="checking" />
-        <p class="custom-text">Custom</p>
-      </div>
-      <div class="format">
-        <button class="get-btn">Large</button>
-        <input type="number" placeholder="Enter quantity" />
-        <input type="number" placeholder="Enter hour" />
-        <input type="number" placeholder="2000 Watts" id="default" readonly />
-        <input type="number" placeholder="custom Watt" id="custom" />
+        <button class="get-btn">Refi Small</button>
+        <input class="quantity" type="number" placeholder="Enter quantity" />
+        <input class="hour" type="number" placeholder="Enter hour" />
+        <input
+          class="default-value"
+          type="number"
+          value="350"
+          id="default"
+          readonly
+        /><span class="default-watt">Watts</span>
+        <input
+          class="custom-value"
+          type="number"
+          placeholder="custom Watt"
+          id="custom"
+        /><span class="custom-watt" style="display: none">Watts</span>
         <input type="checkbox" onclick="clicked()" id="checking" />
         <p class="custom-text">Custom</p>
       </div>
