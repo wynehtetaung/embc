@@ -68,8 +68,9 @@
 .total-visit {
   padding: 20px;
   font-size: 18px;
-  margin: -20px auto;
+  margin: 20px auto;
   border: 0;
+  border-radius: 3px;
   background: var(--visit-background);
   color: var(--visit-color);
   display: flex;

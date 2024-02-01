@@ -17,32 +17,30 @@ const myanmarText = [
   "အင်္ဂလိပ်",
 ];
 
-const myanBtn = document.querySelector(".myan");
-const engBtn = document.querySelector(".eng");
-const textLang = document.querySelectorAll(".nav-lang");
+const navLang = document.querySelectorAll(".nav-lang");
 
 let getLang = String(localStorage.getItem("lang")).toLowerCase();
 localStorage.setItem("lang", getLang);
 
 if (getLang == "myanmar") {
-  for (let i = 0; i < textLang.length; i++) {
-    textLang[i].innerHTML = myanmarText[i];
+  for (let i = 0; i < navLang.length; i++) {
+    navLang[i].innerHTML = myanmarText[i];
     changeMyanmarBtn();
   }
 } else {
-  for (let i = 0; i < textLang.length; i++) {
-    textLang[i].innerHTML = englishText[i];
+  for (let i = 0; i < navLang.length; i++) {
+    navLang[i].innerHTML = englishText[i];
     changeEnglishBtn();
   }
 }
 
-myanBtn.addEventListener("click", () => {
-  for (let i = 0; i < textLang.length; i++) {
-    textLang[i].innerHTML = myanmarText[i];
+myanmar.addEventListener("click", () => {
+  for (let i = 0; i < navLang.length; i++) {
+    navLang[i].innerHTML = myanmarText[i];
   }
 });
-engBtn.addEventListener("click", () => {
-  for (let i = 0; i < textLang.length; i++) {
-    textLang[i].innerHTML = englishText[i];
+english.addEventListener("click", () => {
+  for (let i = 0; i < navLang.length; i++) {
+    navLang[i].innerHTML = englishText[i];
   }
 });

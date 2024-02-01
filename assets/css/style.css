@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  user-select: none;
+  /* user-select: none; */
 }
 :root {
   --nav-bg-color: #f6f6f6;
@@ -137,6 +137,11 @@ footer .right {
 .hide {
   display: none;
 }
-.index-lang {
+
+.d-inline {
   display: inline;
+}
+.text-wrap {
+  width: 400px;
+  text-wrap: wrap;
 }
