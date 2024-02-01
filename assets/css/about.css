@@ -1,0 +1,23 @@
+:root {
+  --text: #000;
+}
+
+.dark-theme {
+  --text: #fff;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content h2,
+p,
+h3,
+b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  color: var(--text);
+}

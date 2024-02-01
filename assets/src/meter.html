@@ -43,12 +43,12 @@
     <section class="section-background">
       <h1>Meter Unit Calculation</h1>
       <div class="box">
-        <input type="number" placeholder="Enter your meter" />
-        <select>
+        <input type="number" placeholder="Enter your meter" id="unit" />
+        <select id="meter-type">
           <option value="1">Household</option>
           <option value="2">Bussiness</option>
         </select>
-        <button type="submit">Calculate</button>
+        <button type="submit" id="calculate">Calculate</button>
       </div>
 
       <div class="table">
@@ -59,44 +59,44 @@
             <th>Cost in mmk</th>
           </tr>
           <tr>
-            <td>1-30</td>
-            <td>35</td>
-            <td>1050</td>
+            <td id="limit1">1-30</td>
+            <td id="unit1">35</td>
+            <td id="cost1">1050</td>
           </tr>
-          <tr>
-            <td>31-50</td>
-            <td>50</td>
-            <td>1000</td>
+          <tr id="row2">
+            <td id="limit2">31-50</td>
+            <td id="unit2">50</td>
+            <td id="cost2">1000</td>
           </tr>
-          <tr>
-            <td>51-75</td>
-            <td>70</td>
-            <td>1750</td>
+          <tr id="row3">
+            <td id="limit3">51-75</td>
+            <td id="unit3">70</td>
+            <td id="cost3">1750</td>
           </tr>
-          <tr>
-            <td>76-100</td>
-            <td>90</td>
-            <td>2250</td>
+          <tr id="row4">
+            <td id="limit4">76-100</td>
+            <td id="unit4">90</td>
+            <td id="cost4">2250</td>
           </tr>
-          <tr>
-            <td>101-150</td>
-            <td>110</td>
-            <td>5500</td>
+          <tr id="row5">
+            <td id="limit5">101-150</td>
+            <td id="unit5">110</td>
+            <td id="cost5">5500</td>
           </tr>
-          <tr>
-            <td>151-200</td>
-            <td>120</td>
-            <td>6000</td>
+          <tr id="row6">
+            <td id="limit6">151-200</td>
+            <td id="unit6">120</td>
+            <td id="cost6">6000</td>
           </tr>
-          <tr>
-            <td>200 and above</td>
-            <td>125</td>
-            <td>****</td>
+          <tr id="row7">
+            <td id="limit7">200 and above</td>
+            <td id="unit7">125</td>
+            <td id="cost7">****</td>
           </tr>
           <tr class="total">
             <td>Total</td>
-            <td>255 units</td>
-            <td>**** mmk</td>
+            <td id="total-unit">units</td>
+            <td id="total-cost">mmk</td>
           </tr>
         </table>
       </div>
@@ -110,6 +110,10 @@
       </div>
     </footer>
     <script src="/assets/js/script.js"></script>
+
     <script src="/assets/localization/nav.js"></script>
+
+    <script src="/assets/js/meter.js"></script>
+
   </body>
 </html>
