@@ -137,3 +137,6 @@ footer .right {
 .hide {
   display: none;
 }
+.index-lang {
+  display: inline;
+}
