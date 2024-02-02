@@ -1,0 +1,49 @@
+table {
+  margin: 40px 0;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+:root {
+  --table-text: #000;
+  --p: #000;
+}
+.dark-theme {
+  --table-text: #fff;
+  --p: #fff;
+}
+td,
+th,
+tr {
+  border: 1px solid #a09f9f;
+  width: 190px;
+  height: 48px;
+  text-align: center;
+  color: var(--table-text);
+}
+th {
+  background: #4bd6eb;
+  color: #000;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: -28px;
+  color: var(--p);
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

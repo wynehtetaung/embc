@@ -8,12 +8,64 @@
       href="/assets/images/png/logo_phone.png"
       type="image/x-icon"
     />
-    <title>EMBC</title>
+
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
-    <h2>Hello EMBC</h2>
-    <p>I create dev branch</p>
+    <div class="navbar">
+      <div class="logo"><img src="/assets/images/png/logo.png" /></div>
+      <ul>
+        <li><a class="act nav-lang" href="/index.html">HOME</a></li>
+        <li><a class="nav-lang" href="assets/src/predict.html">PREDICT</a></li>
+        <li><a class="nav-lang" href="assets/src/meter.html">METER</a></li>
+        <li>
+          <a class="nav-lang" href="assets/src/info.html">ITEMS & UNITS</a>
+        </li>
+        <li><a class="nav-lang" href="assets/src/about.html">ABOUT</a></li>
+      </ul>
+      <img
+        class="dark-light"
+        src="/assets/images/png/light_mode.png"
+        id="icon"
+      />
+
+      <button class="localization myan show nav-lang">Myan</button>
+      <button class="localization eng hide nav-lang">Eng</button>
+    </div>
+
+    <div class="content">
+      <h1>
+        <span class="index-lang">Calculate</span><br />
+        <span class="index-lang d-inline">your</span>
+        <span class="index-lang">meter usage</span> <br />
+        <h1 class="index-lang">with us</h1>
+      </h1>
+      <p class="index-lang text-wrap">
+        You can calculate the cost of meter unit or you can also predict the
+        unit and the cost.
+      </p>
+      <button class="calculate">
+        <a href="assets/src/predict.html" class="index-lang">Calculate</a>
+      </button>
+    </div>
+    <img src="/assets/images/png/OBJECTS.png" class="obj" id="obj" />
+    <button class="total-visit">
+      <span class="index-lang">Total Visitors</span>-
+      <span class="visit-count">0</span>
+    </button>
+
+    <!-- <footer>
+      <div class="left">&copy; EMBC calculating site</div>
+      <div class="right">
+        <div><img src="/assets/images/svg/facebook.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/twitter.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/instagram.svg" alt="" /></div>
+      </div>
+    </footer> -->
+
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/localization/nav.js"></script>
+    <script src="/assets//localization/index.js"></script>
   </body>
 </html>

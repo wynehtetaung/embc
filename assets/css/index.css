@@ -1,0 +1,80 @@
+.content {
+  margin-top: 5%;
+  max-width: 600px;
+  margin-left: 100px;
+}
+
+:root {
+  --content-btn: #f6f6f6;
+  --content-h1: #000;
+  --visit-background: #23252a;
+  --visit-color: #ffffff;
+}
+
+.dark-theme {
+  --content-btn: #3d4151;
+  --content-h1: #f6f6f6;
+  --visit-background: rgb(210, 210, 210);
+  --visit-color: #000000;
+}
+
+.content h1 {
+  font-size: 50px;
+  color: var(--content-h1);
+}
+
+.content span {
+  font-size: 57px;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: var(--content-h1);
+  line-height: 25px;
+}
+
+.content .calculate {
+  width: 150px;
+  height: 50px;
+  background: #04eefe;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content .calculate:hover {
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.5s;
+}
+
+.content .calculate a {
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  color: var(--content-btn);
+}
+
+.obj {
+  position: absolute;
+  width: 450px;
+  bottom: 0;
+  top: 17%;
+  right: 10%;
+}
+
+.total-visit {
+  padding: 20px;
+  font-size: 18px;
+  margin: 20px auto;
+  border: 0;
+  border-radius: 3px;
+  background: var(--visit-background);
+  color: var(--visit-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}

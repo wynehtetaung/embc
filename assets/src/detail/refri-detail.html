@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/png/logo_phone.png"
+      type="image/x-icon"
+    />
+    <title>about</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/detail.css" />
+
+    <style>
+      .navbar {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body class="section-background">
+    <div class="navbar">
+      <div class="logo"><img src="/assets/images/png/logo.png" /></div>
+      <ul>
+        <li><a class="nav-lang" href="/index.html">HOME</a></li>
+        <li><a class="act nav-lang" href="predict.html">PREDICT</a></li>
+        <li><a class="nav-lang" href="meter.html">METER</a></li>
+        <li><a class="nav-lang" href="info.html">ITEMS & UNITS</a></li>
+        <li><a class="nav-lang" href="about.html">ABOUT</a></li>
+      </ul>
+      <img
+        class="dark-light"
+        src="/assets/images/png/light_mode.png"
+        id="icon"
+      />
+
+      <button class="localization myan show nav-lang">Myan</button>
+      <button class="localization eng hide nav-lang">Eng</button>
+    </div>
+    <section class="section-background">
+      <a href="predict.html"><h3>&lt;&lt; Back</h3></a>
+      <h1 class="item-name">Refrigerator</h1>
+      <div class="btn-gp">
+        <button>Refi Small</button>
+        <button>Refi Medium</button>
+        <button>Refi Large</button>
+      </div>
+      <hr />
+      <div class="format">
+        <button class="get-btn">Refi Small</button>
+        <input class="quantity" type="number" placeholder="Enter quantity" />
+        <input class="hour" type="number" placeholder="Enter hour" />
+        <input
+          class="default-value"
+          type="number"
+          value="350"
+          id="default"
+          readonly
+        /><span class="default-watt">Watts</span>
+        <input
+          class="custom-value"
+          type="number"
+          placeholder="custom Watt"
+          id="custom"
+        /><span class="custom-watt" style="display: none">Watts</span>
+        <input type="checkbox" onclick="clicked()" id="checking" />
+        <p class="custom-text">Custom</p>
+      </div>
+
+      <div class="final">
+        <a href="/assets/src/predict.html"
+          ><button class="calculate">&lt;&lt; Back</button></a
+        >
+
+        <button class="add" type="">
+          <img src="/assets/images/png/plus.png" alt="" />Save to add
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="left">&copy; EMBC calculating site</div>
+      <div class="right">
+        <div><img src="/assets/images/svg/facebook.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/twitter.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/instagram.svg" alt="" /></div>
+      </div>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/localization/nav.js"></script>
+    <script src="/assets/js/detail.js"></script>
+  </body>
+</html>

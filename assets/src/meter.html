@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/png/logo_phone.png"
+      type="image/x-icon"
+    />
+    <title>Meter</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/meter.css" />
+    <style>
+      .navbar {
+        position: fixed;
+      }
+      .section-background {
+        min-height: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><img src="/assets/images/png/logo.png" /></div>
+      <ul>
+        <li><a class="nav-lang" href="/index.html">HOME</a></li>
+        <li><a class="nav-lang" href="predict.html">PREDICT</a></li>
+        <li><a class="act nav-lang" href="meter.html">METER</a></li>
+        <li><a class="nav-lang" href="info.html">ITEMS & UNITS</a></li>
+        <li><a class="nav-lang" href="about.html">ABOUT</a></li>
+      </ul>
+      <img
+        class="dark-light"
+        src="/assets/images/png/light_mode.png"
+        id="icon"
+      />
+
+      <button class="localization myan show nav-lang">Myan</button>
+      <button class="localization eng hide nav-lang">Eng</button>
+    </div>
+    <section class="section-background">
+      <h1 class="meter-lang">Meter Unit Calculation</h1>
+      <div class="box">
+        <input type="number" placeholder="Enter your meter" id="unit" />
+        <select id="meter-type">
+          <option value="1" class="meter-lang">Home</option>
+          <option value="2" class="meter-lang">Business</option>
+        </select>
+        <button type="submit" id="calculate" class="meter-lang">
+          Calculate
+        </button>
+      </div>
+
+      <div class="table">
+        <table>
+          <tr>
+            <th class="meter-lang">Limit Range</th>
+            <th class="meter-lang">Unit per Kyat</th>
+            <th class="meter-lang">Cost in mmk</th>
+          </tr>
+          <tr>
+            <td id="limit1">1-30</td>
+            <td id="unit1">35</td>
+            <td id="cost1">1050</td>
+          </tr>
+          <tr id="row2">
+            <td id="limit2">31-50</td>
+            <td id="unit2">50</td>
+            <td id="cost2">1000</td>
+          </tr>
+          <tr id="row3">
+            <td id="limit3">51-75</td>
+            <td id="unit3">70</td>
+            <td id="cost3">1750</td>
+          </tr>
+          <tr id="row4">
+            <td id="limit4">76-100</td>
+            <td id="unit4">90</td>
+            <td id="cost4">2250</td>
+          </tr>
+          <tr id="row5">
+            <td id="limit5">101-150</td>
+            <td id="unit5">110</td>
+            <td id="cost5">5500</td>
+          </tr>
+          <tr id="row6">
+            <td id="limit6">151-200</td>
+            <td id="unit6">120</td>
+            <td id="cost6">6000</td>
+          </tr>
+          <tr id="row7">
+            <td id="limit7">200 and above</td>
+            <td id="unit7">125</td>
+            <td id="cost7">****</td>
+          </tr>
+          <tr class="total">
+            <td class="meter-lang">Total</td>
+            <td>
+              <span id="total-unit"></span>
+              <span class="meter-lang">units</span>
+            </td>
+            <td>
+              <span id="total-cost"></span> <span class="meter-lang">mmk</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="left">&copy; EMBC calculating site</div>
+      <div class="right">
+        <div><img src="/assets/images/svg/facebook.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/twitter.svg" alt="" /></div>
+        <div><img src="/assets/images/svg/instagram.svg" alt="" /></div>
+      </div>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/localization/nav.js"></script>
+    <script src="/assets/localization/meter.js"></script>
+    <script src="/assets/js/meter.js"></script>
+  </body>
+</html>

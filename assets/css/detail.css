@@ -1,0 +1,167 @@
+/* h3 {
+  font-size: 18px;
+
+  margin-left: 800px;
+} */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section-background {
+  background-image: var(--url);
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+:root {
+  --h1: #000;
+  --watt: #000;
+  --add: #076cbe;
+  --calculate-hover: #000;
+  --custom: #000;
+}
+
+.dark-theme {
+  --h1: #fff;
+  --watt: #fff;
+  --add: #fff;
+  --calculate-hover: #fff;
+  --custom: #fff;
+}
+
+h1,
+.btn-gp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  color: var(--h1);
+}
+
+.btn-gp {
+  margin: 20px 0;
+}
+
+.btn-gp button {
+  margin: 0 20px;
+  padding: 15px 20px;
+  background: #89ecf3;
+  backface-visibility: 20%;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-gp button:hover {
+  background: #0bd4e3;
+}
+
+hr {
+  width: 500px;
+
+  margin: 0 auto;
+}
+
+.format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.format button {
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 20px 19px;
+  background: #0bd4e3;
+  border: 0;
+  outline: 0;
+}
+
+.format input[type="number"] {
+  width: 120px;
+  padding: 10px 10px;
+  margin: 20px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background: #efcdcd;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#custom {
+  display: none;
+}
+
+#default::placeholder {
+  color: #000;
+}
+
+input#checking {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.final {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.final .add {
+  width: 200px;
+  padding: 10px 5px;
+  margin: 50px 10px;
+  border: 2px solid#076cbe;
+  border-radius: 5px;
+  color: var(--add);
+  background: transparent;
+  transition: 0.2s;
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.final .add img {
+  width: 22px;
+  padding-right: 9px;
+}
+.final .add:hover {
+  background: #076cbe;
+  color: #fafafa;
+  transition: 0.2s;
+}
+
+.final .calculate {
+  width: 200px;
+  padding: 10px 5px;
+  margin: 50px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background: #076cbe;
+  color: #ffffff;
+  transition: 0.2s;
+  box-shadow: 2px 2px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.final .calculate:hover {
+  border: 2px solid#076cbe;
+
+  background: transparent;
+  transition: 0.2s;
+  color: var(--calculate-hover);
+}
+
+.custom-text {
+  color: var(--custom);
+}
