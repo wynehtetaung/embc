@@ -10,13 +10,14 @@
   --nav-bg-color: #f6f6f6;
   --nav-ul: #000;
   --footer-bg-color: linear-gradient(90deg, #61d8e8 0.83%, #4dadfe 100%);
-  --mark-bg-color: rgba(75, 176, 255, 0.2);
+  --mark-bg-color: #91d0e7;
   --url: url("/assets/images/png/background.png");
 }
 
 .dark-theme {
   --nav-bg-color: #000000;
   --nav-ul: #f6f6f6;
+  --mark-bg-color: #19a2d3;
   --url: url("/assets/images/png/background2.png");
 }
 
